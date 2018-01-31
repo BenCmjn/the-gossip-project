@@ -1,3 +1,14 @@
+# READ HERE FIRST
+
+Le root affiche encore "hello world!" c'est "normal".
+- Pour voir tous les gossip : rajoute `gossips/index` à l'url
+- Pour créer un nouveau gossip : rajoute `gossips/new` à l'url
+- Pour vérifier que tu as bien détruit le gossip, recharge la page après avoir cliqué sur détruire.
+
+- Pour lever un doute appelle moi sur Slack : @Ben Cmjn
+
+
+
 # Ruby on Rails Tutorial sample application
 
 This is the sample application for

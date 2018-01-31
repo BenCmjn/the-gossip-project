@@ -12,4 +12,8 @@
 <p> <%= link_to 'Back', gossips_path %> </p>
 <p> <%= link_to('Editer mon gossip', edit_gossip_path) %> </p> 
 
+<p> <%= link_to 'Clique pour détruire', gossip_path(@gossip), method: :delete %> </p>
 
+<br>
+
+<p> <%= link_to('Nouveau gossip', new_gossip_path ) %> </p> 

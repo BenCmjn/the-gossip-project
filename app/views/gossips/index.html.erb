@@ -1,0 +1,18 @@
+<h1> Tous les gossips !! </h1>
+<table>
+  <tr>
+    <th>Auteur</th>
+    <th>contenu</th>
+  </tr>
+ 
+  <% @gossips.each do |gossip| %>
+   <tr>
+     <td><%= gossip.anonymous_author %></td>
+     <td><%= gossip.content %></td>
+   </tr>
+ <% end %>
+
+</table>
+
+<br/>
+<p> <%= link_to('Tu veux gossip encore?', new_gossip_path ) %> </p> 
