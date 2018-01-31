@@ -4,10 +4,21 @@ class GossipsController < ApplicationController
     @gossip = Gossip.new
   end
 
+  def edit
+    
+  end
+
   def create
-  	@gossip = Gossip.new(gossip_params)
-    @gossip.save
-    redirect_to @gossip
+    @gossip = Gossip.new(gossip_params)
+    if @gossip.save
+      redirect_to @gossip
+    else
+      render 'new'
+    end
+  end
+
+  def update
+    
   end
 
   def show
@@ -18,6 +29,9 @@ class GossipsController < ApplicationController
     params.require(:gossip).permit(:anonymous_author, :content)
   end
 
+  
+
+  
 
 
 end
